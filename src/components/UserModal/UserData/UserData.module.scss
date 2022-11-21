@@ -1,0 +1,30 @@
+.userDataWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    table tbody {
+        tr {
+            td {
+                padding: 5px 0;
+
+                &:nth-of-type(1) {
+                    font-weight: bold;
+                }
+
+                &:nth-of-type(2) {
+                    padding: 0 10px;
+                    color: rgb(80, 80, 80);
+                }
+
+                &.userUrl {
+                    color: rgb(72, 41, 247);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}

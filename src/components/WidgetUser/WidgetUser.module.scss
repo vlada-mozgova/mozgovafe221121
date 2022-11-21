@@ -1,0 +1,47 @@
+.widgetUserWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+
+    &:last-child {
+        border: none;
+    }
+
+    .userWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .userAvatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .userName {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span {
+                color: rgb(95, 93, 93);
+            }
+        }
+    }
+
+    .viewButton {
+        background: none;
+        border: 1px solid rgb(230, 230, 230);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(230, 230, 230)
+        }
+    }
+}

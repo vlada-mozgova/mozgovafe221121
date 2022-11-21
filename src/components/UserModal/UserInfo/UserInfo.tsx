@@ -9,7 +9,7 @@ interface Props {
 
 const UserInfo: FC<Props> = ({ name, position, photo }) => {
     return (
-        <div className={classes.userBlockWrapper}>
+        <div data-testid='user-info' className={classes.userBlockWrapper}>
             <img className={classes.userAvatar} src={require(`../../../data/photo/${photo}`)} alt='avatar' />
             <div className={classes.userBlockInfo}>
                 {name}

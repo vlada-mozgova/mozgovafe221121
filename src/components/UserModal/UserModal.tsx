@@ -11,7 +11,7 @@ interface Props {
 }
 const UserModal: FC<Props> = ({ user, setOpenModal }) => {
     return (
-        <div className={classes.modalWrapper}>
+        <div data-testid='user-modal' className={classes.modalWrapper}>
             <div className={classes.modalBody}>
                 <div className={classes.closeButton} onClick={() => setOpenModal(false)}>
                     <img src={CloseButton} alt='close' />

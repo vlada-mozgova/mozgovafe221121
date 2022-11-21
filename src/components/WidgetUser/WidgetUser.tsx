@@ -9,7 +9,7 @@ interface Props {
 
 const WidgetUser: FC<Props> = ({ user, setUserData }) => {
     return (
-        <div className={classes.widgetUserWrapper}>
+        <div data-testid='widget-user' className={classes.widgetUserWrapper}>
             <div className={classes.userWrapper}>
                 <img src={require(`../../data/photo/${user.photo}`)} alt={'avatar'} className={classes.userAvatar} />
                 <div className={classes.userName} >

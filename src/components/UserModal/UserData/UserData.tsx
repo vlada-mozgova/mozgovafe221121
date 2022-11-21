@@ -8,7 +8,7 @@ interface Props {
 
 const UserData: FC<Props> = ({ phone, email }) => {
     return (
-        <div className={classes.userDataWrapper}>
+        <div data-testid='user-data' className={classes.userDataWrapper}>
             <table>
                 <tbody>
                     <tr>

@@ -16,7 +16,7 @@ const App: FC = () => {
   }, [userData])
 
   return (
-    <div className="App">
+    <div data-testid='app' className="App">
       {openModal && <UserModal user={userData} setOpenModal={setOpenModal} />}
       <Widget users={users} setUserData={setUserData} />
     </div>

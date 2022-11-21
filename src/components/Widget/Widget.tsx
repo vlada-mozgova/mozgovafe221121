@@ -13,7 +13,7 @@ const Widget: FC<Props> = ({ users, setUserData }) => {
 
     const handleShowAll = () => setShowAll(true)
     return (
-        <div className={classes.widgetWrapper}>
+        <div data-testid='widget' className={classes.widgetWrapper}>
             {!!users?.length && users.map((user, index) => (!showAll ? index <= 2 : index >= 0) &&
                 <WidgetUser key={user.nickname} user={user} setUserData={setUserData} />)}
             {!showAll && <button onClick={handleShowAll} className={classes.viewAllButton} type='button'>View all</button>}
